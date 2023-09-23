@@ -1,0 +1,154 @@
+*::selection {
+  background-color: #f8c508;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #5e85db, #680ccc);
+  overflow: hidden;
+  display: flex;
+}
+
+* {
+  margin: 0;
+}
+
+form {
+  margin: auto auto;
+  width: 40%;
+  height: 92%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form .logo-div {
+  width: 100%;
+  text-align: center;
+}
+
+img.logo {
+  width: 18%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+form .title {
+  margin-top: 5%;
+}
+
+form .connection-mediums i {
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+form .connection-mediums i:hover {
+  color: salmon;
+  border-color: salmon;
+
+  transition: all 0.3s ease-in-out;
+}
+
+form .input-section {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form .input-section input {
+  outline: none;
+  color: #717171;
+  background: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 80%;
+  background-color: white;
+
+  border: 2px solid #717171;
+}
+
+form .input-section input:focus,
+form .input-section input:hover {
+  border-color: #01a9fd;
+}
+
+form .input-section input:invalid {
+  border-color: #f33721;
+}
+
+form a {
+  text-decoration: none;
+  color: salmon;
+}
+
+form a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form .connect {
+  color: white;
+  background-color: #1393d3;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 1px solid #1393d3;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+form .connect:hover {
+  color: #1393d3;
+  background-color: white;
+  scale: 1.1;
+  border: 1px solid #1393d3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+  form {
+    width: 50%;
+  }
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  form {
+    width: 60%;
+  }
+}
+
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  form {
+    width: 83%;
+  }
+}

@@ -1,0 +1,109 @@
+/* style du main */
+main {
+  width: 53%;
+  height: auto;
+  background-color: white;
+  margin: 3% auto;
+  border-radius: 10px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#page-title {
+  margin: 5%;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#mentions p,
+#mentions ul li {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 2.5%;
+  text-align: justify;
+}
+
+#mentions ul li {
+  margin: 1%;
+}
+
+#mentions h1 {
+  font-size: 25px;
+  line-height: 1.8;
+  margin: 2.5%;
+}
+
+#mentions a {
+  font-size: 17px;
+  color: salmon;
+  text-decoration: none;
+}
+
+#mentions a:hover {
+  text-decoration: underline;
+}
+
+#mentions .number {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  /* header */
+  #header-content {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  /* contenu principal */
+  main {
+    width: 80%;
+  }
+
+  main .summary {
+    border: none;
+  }
+}
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  /* header */
+  header {
+    height: 250px;
+  }
+
+  #header-content {
+    flex-direction: column;
+  }
+
+  /* contenu principal */
+  .entreprise-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entreprise-section .left {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  .entreprise-section .right {
+    width: 95%;
+  }
+
+  .entreprise-section .right .liste-infos {
+    flex-direction: column;
+  }
+}

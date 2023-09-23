@@ -1,0 +1,219 @@
+/* style du main */
+main {
+  width: 53%;
+  height: auto;
+  background-color: white;
+  margin: 3% auto;
+  border-radius: 10px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .change-language {
+  font-size: 0;
+}
+
+main #top-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #top-buttons .change-language button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100px;
+  text-decoration: none;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+main #top-buttons .change-language button.french {
+  border-radius: 2rem 0 0 2rem;
+}
+
+main #top-buttons .change-language button.english {
+  border-radius: 0 2rem 2rem 0;
+}
+
+main #top-buttons .change-language button {
+  color: white;
+  background-color: #1393d3;
+  border: 1px solid #1393d3;
+  font-weight: bold;
+}
+
+main #top-buttons .change-language button:hover {
+  color: #1393d3;
+  background-color: white;
+  border: 1px solid #1393d3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+main #top-buttons .change-language button[onclick] {
+  color: #1393d3;
+  background-color: white;
+  border: 1px solid #1393d3;
+  font-weight: normal;
+}
+
+main #top-buttons .change-language button[onclick]:hover {
+  color: white;
+  background-color: #1393d3;
+  border: 1px solid #1393d3;
+}
+
+main #top-buttons .presentation-button {
+  color: white;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: none;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+main #top-buttons .presentation-button:hover {
+  scale: 1.1;
+
+  transition: all 0.5s ease-in-out;
+}
+
+main .entreprise-title {
+  margin: 5%;
+  font-size: 35px;
+}
+
+/* analyse PESTEL */
+a#last-update {
+  font-size: 17px;
+  margin: 2.5%;
+  color: salmon;
+  text-decoration: none;
+}
+
+a#last-update:hover {
+  text-decoration: underline;
+}
+
+.gradient-title h1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  padding: 2%;
+  color: white;
+}
+
+.gradient-title {
+  margin-top: 5%;
+  width: 100%;
+}
+
+#opportunities h1 {
+  background-image: linear-gradient(
+    to right,
+    #3b730f,
+    #539013,
+    #6dae15,
+    #89cc15,
+    #a8eb12
+  );
+}
+
+#threats h1 {
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+
+.pestel-container {
+  margin: 2.5%;
+}
+
+.pestel-container h2 {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.pestel-container ul li {
+  font-size: 17px;
+}
+
+.pestel-container ul {
+  list-style: none;
+}
+.pestel-container ul li::before {
+  content: "➣ ";
+}
+
+.pestel-container ul li {
+  margin: 5px;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  /* header */
+  #header-content {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  /* contenu principal */
+  main {
+    width: 80%;
+  }
+
+  main .summary {
+    border: none;
+  }
+}
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  /* header */
+  header {
+    height: 250px;
+  }
+
+  #header-content {
+    flex-direction: column;
+  }
+
+  /* contenu principal */
+  .entreprise-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entreprise-section .left {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  .entreprise-section .right {
+    width: 95%;
+  }
+
+  .entreprise-section .right .liste-infos {
+    flex-direction: column;
+  }
+}

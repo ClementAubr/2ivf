@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8"> <!-- charger l'encodage -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/body-strcture.css"> <!-- charger le css du body -->
+    <link rel="stylesheet" href="../css/presentation-capgemini.css"> <!-- charger le css -->
+    <link rel="stylesheet" href="../css/header.css"> <!-- charger le css du header -->
+    <link rel="stylesheet" href="../css/footer.css"> <!-- charger le css du footer -->
+
+    <!-- charger la police d'écriture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- charger les icônes (google fonts)-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+
+    <!-- charger les icônes (font awesome)-->
+    <script src="https://kit.fontawesome.com/bf31f3517c.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="../res/images/thumbnail.png"> <!-- charger la miniature -->
+    <title>2IVF - Présentation Capgemini</title>
+</head>
+
+<body>
+    <header>
+        <div id="header-content">
+            <a href="../index.html"><img id="header-logo" src="../res/images/thumbnail.png" alt="2iVF_Logo"></a>
+            <div id="header-search-content">
+                <input type="text" class="search-bar" placeholder="Recherche une entreprise" onkeypress="main.html">
+                <a href="search.html"><span class="material-symbols-outlined search-icon">search</span></a>
+            </div>
+            <div id="header-buttons">
+                <button onclick="window.location.href = 'presentation-2ivf.html'">À propos</button>
+                <button onclick="window.location.href = 'contact.html'">Contacts</button>
+                <button onclick="window.location.href = 'connection.html'">Se connecter</button>
+                <button onclick="window.location.href = 'inscription.html'">S'inscrire</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="top-buttons">
+            <div class="change-language">
+                <button class="french">Français</button>
+                <button class="english"
+                    onclick="window.location.href = 'presentation-capgemini-en.html'">English</button>
+            </div>
+            <button class="pestel-button" onclick="window.location.href = 'pestel-capgemini.html'">Analyse
+                PESTEL</button>
+        </div>
+        <h1 class="entreprise-title">Capgemini</h1>
+        <div class="summary">
+            <h2>Sommaire</h2>
+            <ul>
+                <li>
+                    <a href="#quick-presentation">Une rapide présentation</a>
+                </li>
+                <li>
+                    <a href="#capgemini-numbers">Capgemini en chiffres</a>
+                </li>
+                <li><a href="#capgemini-functions">Domaines de gestion</a>
+                    <ul>
+                        <li>
+                            <a href="#supply-title">Approvisionnement</a>
+                        </li>
+                        <li>
+                            <a href="#production-title">Production</a>
+                        </li>
+                        <li>
+                            <a href="#commercial-title">Commerciale</a>
+                        </li>
+                        <li>
+                            <a href="#hrm-title">Gestion Ressources Humaines</a>
+                        </li>
+                        <li>
+                            <a href="#finance-title">Finance</a>
+                        </li>
+                        <li>
+                            <a href="#compta-title">Comptabilité</a>
+                        </li>
+                        <li>
+                            <a href="#dev-title">Recherche & Développement</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="quick-presentation" class="main-containers">
+            <h1 class="sub-title">Une rapide présentation</h1>
+            <p class="main-paragraphs">
+                Capgemini est une entreprise multinationale de conseil en technologies, en management et en outsourcing.
+                Elle a été fondée en 1967 en France et compte aujourd'hui plus de 270 000 employés dans plus de 50 pays.
+                Capgemini offre une gamme de services, notamment en matière de conseil en stratégie, consulting,
+                digital,
+                technologie et externalisation. L'entreprise a des bureaux dans de nombreux pays, y compris en France,
+                en
+                Allemagne, aux États-Unis et en Inde.
+            </p>
+        </div>
+
+        <div id="capgemini-numbers">
+            <h1 class="sub-title">Capgemini en chiffres</h1>
+            <table id="stats">
+                <tr>
+                    <td>Chiffre d'affaires</td>
+                    <td>367M€</td>
+                </tr>
+                <tr>
+                    <td>Capital Social</td>
+                    <td>1.3M€</td>
+                </tr>
+                <tr>
+                    <td>Endettement</td>
+                    <td>37.7%</td>
+                </tr>
+                <tr>
+                    <td>Nombre de salariés</td>
+                    <td>270K</td>
+                </tr>
+                <tr>
+                    <td>Présence</td>
+                    <td>40 pays</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="capgemini-functions" class="main-containers">
+            <h1 class="sub-title">Dommaines de gestion</h1>
+            <h2 id="supply-title">Approvisionnement</h2>
+            <p class="main-paragraphs">
+                Étant donné que Capgemini offre des services, elle n’a pas besoin de s’approvisionner en matière
+                première. Cependant, les partenariats sont au cœur de son activité puisqu’elle se charge de paramétrer
+                pour les clients les logiciels créés par les éditeurs de logiciels. De cette manière, Capgemini compte
+                pas moins d’une vingtaine de partenariats majeurs dont Adobe, , IBM, Google Cloud ou Amazon
+            </p>
+
+            <h2 id="production-title">Production</h2>
+            <p class="main-paragraphs">
+                Le service le plus demandé chez Capgemini est celui d’infogérance, consistant à administrer et à assurer
+                la pérennité de tout ou partie du système d’information numérique d’une entreprise. Cela se traduit
+                notamment par de la Tierce Maintenance Applicative, c'est-à-dire s’assurer de garder les progiciels dans
+                un état optimal de fonctionnement, quitte à prendre des responsabilités face aux éventuels problèmes.Ces
+                services sont souvent appliqués via des contrats de 3 à 5 ans avec l’entreprise en question.
+            </p>
+            <p class="main-paragraphs">
+                Capgemini propose aussi de l’intégration logicielle en implémentant et en configurant les progiciels
+                afin qu’ils correspondent le mieux à ce que l’entreprise attend. Cette tâche est en général rémunérée à
+                la mission ; mission qui peut durer plusieurs mois voire un an suivant la complexité des réglages.
+                Enfin, la firme propose des formations à l’utilisation des outils numériques ainsi que du conseil dans
+                le domaine.
+            </p>
+
+            <h2 id="commercial-title">Commerciale</h2>
+            <p class="main-paragraphs">
+                Capgemini segmente sa clientèle en 2 principaux types de clients : les entreprises qui sont intéressées
+                par les services d’intégration ou de maintenance logicielle, et celles qui sont en recherche de conseils
+                pour améliorer leur productivité grâce au numérique. Le ciblage est ainsi différencié : l’une recevra de
+                l’infogérance alors que l’autre sera guidée par le cabinet de conseil de Capgemini.
+            </p>
+            <p class="main-paragraphs">Capgemini vise une large clientèle, avec une palette de tarifs variable selon la
+                complexité du travail
+                demandé. Toutes les entreprises souhaitant ses services sont concernées, qu’elles soient petites, ou
+                grandes.
+            </p>
+
+            <h2 id="hrm-title">Gestion des Ressources Humaines</h2>
+            <p class="main-paragraphs">Capgemini est une entreprise dans l’air du temps, qui essaie notamment d’évoluer
+                vers une égalité des
+                sexes. Ainsi, elle favorise la parité des postes et des salaires avec comme objectif que 30% des postes
+                importants soient occupés par des femmes d’ici 2025. De plus, Capgemini fait partie du Valuable 500, un
+                réseau mondial de dirigeants impliqués dans l’inclusion des personnes handicapées, avec des
+                infrastructures adaptées.
+            </p>
+            <p class="main-paragraphs">Concernant les salaires, les employés sont bien payés avec des salaires allant de
+                19 500€ pour une nouvelle recrue, à 57 000€ net par an pour un chef de projet expérimenté. Les
+                conditions de travail offertes sont agréables : ambiance dynamique et professionnelle, horaires
+                flexibles et possibilité de télétravailler. Les employés possèdent 25 à 33 jours de congés par an
+                suivant leur ancienneté.</p>
+
+            <h2 id="finance-title">Finance</h2>
+            <p class="main-paragraphs">Les actionnaires constituent une part importante du financement de l’entreprise.
+                Ainsi, le capital total de Capgemini est constitué de 0.2% d'autofinancement, 6.2% d’actionnaires
+                individuels et 85% d’investisseurs institutionnels. Parmi ces acteurs majeurs, 67.5% sont basés à
+                l’international. Enfin, 8.6% du capital est détenu par les salariés du groupe.</p>
+
+            <img src="../res/images/finance-capgemini.jpg" alt="graphique des sources de finances de capgemini">
+
+            <p class="main-paragraphs">Néanmoins, en fin d’année 2021, Capgemini comptait environ 3,224Md €
+                d'endettement, soit 37,4% des capitaux propres de l’entreprise - ces dernières s’élevant à 8,48Md €.
+                Cela reste convenable pour une entreprise de l’envergure de Capgemini. Aujourd’hui, l’entreprise ne
+                cesse de se diversifier et de s’agrandir. Le dernier gros rachat amical en date est celui d’Altran en
+                2018, spécialisé dans le conseil en ingénierie, et renommé Capgemini Engineering.</p>
+
+            <h2 id="compta-title">Comptabilité</h2>
+            <p class="main-paragraphs">Comme le veut la loi, les bilans comptables de l’entreprise sont transparents et
+                disponibles directement sur leur site officiel. Capgemini prépare et y publie régulièrement un
+                calendrier prévisionnel témoignant des prochains grands événements de l’entreprise. Ainsi, au troisième
+                trimestre de 2022, Capgemini a empoché près de 5 553 millions d’euros et compte un taux de croissance de
+                15.7%.</p>
+            <p class="main-paragraphs">En 2021, elle a dégagé un chiffre d’affaires de 16,8 milliards d’euros. Parmi les
+                différents marchés sur lesquels Capgemini est présente, la France représente près de 22% de son chiffre
+                d'affaires, et l’Amérique du Nord y contribue à hauteur de 32%, témoignant de son rayonnement mondial.
+            </p>
+
+            <img src="../res/images/compta-capgemini.jpg" alt="graphique des pourcentages de marchés de capgemini">
+
+            <h2 id="dev-title">Recherche & Développement</h2>
+            <p class="main-paragraphs">Capgemini prône l’innovation dans le numérique et il lui est alors indispensable
+                d’effectuer un travail de R&D. Elle entreprend de nombreux travaux visant à améliorer et rendre plus
+                complets ses services comme son IA. De même, de nouvelles technologies apparaissent à chaque instant et
+                il est important pour Capgemini de s’y adapter.</p>
+            <p class="main-paragraphs">Par exemple, un progiciel pourrait se mettre à proposer une nouvelle
+                fonctionnalité, que Capgemini devra apprendre à utiliser, à implémenter et à paramétrer de la façon la
+                plus optimale. C’est un travail d’apprentissage et d’optimisation permanent.
+                L’entreprise met en avant 6 secteurs principaux dans lesquels elle est très active et qu’elle espère
+                révolutionner. Il s’agit de la mobilité et de l’informatique du futur, de la santé, de l’industrie, du
+                data science et du machine learning.
+            </p>
+
+        </div>
+        <a id="last-update" href="" onclick="return false;">Dernière mise à jour : 16/12/2022</a>
+
+    </main>
+    <footer>
+        <div class="left">
+            <h1>Mentions Légales</h1>
+            <p>Conformément aux dispositions de l'article 6 III-1 de la loi n°2004-575 du 21 juin 2004 pour la confiance
+                dans l'économie numérique, cette page reprend les mentions légales et conditions générales d'utilisation
+                du site.</p>
+            <button onclick="window.location.href = 'mentions.html'">Plus d'informations</button>
+        </div>
+        <div class="center">
+            <h1>Nous contacter</h1>
+            <p><a href="tel:+33656654850">tel: 33+ 6 56 65 48 50</a></p>
+            <p><a href="tel:+33626493546">fax: 33+ 6 26 49 35 46</a></p>
+            <p><a href="mailto:2ivf-officiel@gmail.com">courriel : 2ivf-officiel@gmail.com</a></p>
+        </div>
+        <div class="right">
+            <h1>Nos réseaux</h1>
+            <div class="logos">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <button onclick="window.location.href = 'inscription.html'">S'abonner à la newsletter</button>
+        </div>
+    </footer>
+    <div class="sous-footer"></div>
+    <p id="copyright">© Décembre 2022 | Par 2IVF Tous Droits Réservés</p>
+</body>
+
+</html>
